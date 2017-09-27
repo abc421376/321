@@ -1,0 +1,38 @@
+
+.quick-action-item{
+  height: 25vw;
+  display: flex;
+  align-items: center;
+  margin-top: -1px;
+  border: 1px solid black;
+}
+.quick-action-item + .quick-action-item{
+  margin-left: -1px;
+}
+
+.shortcut{
+  height: auto;
+}
+
+.quick-actions + .quick-actions{
+  margin-left: -1px;
+}
+
+.income{
+  font-size: 18px;
+}
+.yuan{
+  font-size: 10px;
+}
+.side-menu{
+  margin-left: 20px;
+}
+.side-menu .item{
+  border-left: none;
+  background-color: #333;
+  color: #828282;
+  border-color: #4e4e4e;  }
+.side-menu .item .icon{
+  color: #989898;
+}
+
