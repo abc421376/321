@@ -82,6 +82,34 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
           }
         }
       })
+      .state('app.setting', {
+        url: '/setting',
+        views: {
+          'menuContent': {
+            templateUrl: 'view/setting/setting.html',
+            controller: 'SettingCtrl'
+          }
+        }
+      })
+      .state('app.shop', {
+        url: '/shop',
+        views: {
+          'menuContent': {
+            templateUrl: 'view/shop/shop.html',
+            controller: 'ShopCtrl'
+          }
+        }
+      })
+      .state('app.shop-edit', {
+        url: '/shop-edit',
+        params:{title:'',property:''},
+        views: {
+          'menuContent': {
+            templateUrl: 'view/shop/shop-edit.html',
+            controller: 'ShopEditCtrl'
+          }
+        }
+      })
 
       .state('app.playlists', {
         url: '/playlists',
@@ -92,6 +120,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
           }
         }
       })
+
 
       .state('list-inset', {
         url: '/list-inset',
