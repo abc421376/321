@@ -2,7 +2,8 @@
   "name": "Shengyizhuanjia",
   "app_id": "",
   "integrations": {
-    "gulp": {}
+    "gulp": {},
+    "cordova": {}
   },
   "watchPatterns": [
     "scss/**/*"

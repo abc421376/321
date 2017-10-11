@@ -4,7 +4,7 @@
 (function () {
   'use strict';
   angular.module('starter.controllers')
-    .controller('ShopEditCtrl',['$scope','$stateParams','localStorageService',function ($scope,$stateParams,localStorageService) {
+    .controller('ShopEditCtrl',['$scope','$stateParams','localStorageService','$ionicHistory',function ($scope,$stateParams,localStorageService,$ionicHistory) {
       $scope.title=$stateParams.title;
       $scope.property=$stateParams.property;
 
@@ -20,6 +20,7 @@
      console.log($scope.shop);
       $scope.save =function () {
         localStorageService.update('Shop',$scope.shop);
-      };
+  $ionicHistory.goBack();
+    };
     }]);
 })();

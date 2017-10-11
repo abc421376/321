@@ -3,7 +3,15 @@
  */
 (function () {
   'use strict';
-  angular.module('starter.controllers').controller('CategoryListCtrl', ['$scope','$ionicHistory','$ionicActionSheet', function ($scope,$ionicHistory,$ionicActionSheet) {
+  angular.module('starter.controllers').controller('CategoryListCtrl', ['$scope','CategoryService','$ionicHistory','$ionicActionSheet', function ($scope,CategoryService,$ionicHistory,$ionicActionSheet) {
+    $scope.showInfo='无小分类进入大分类';
+    $scope.$on('$stateChangSuccess',function (event,toState,toPArams,fromState,fromParams) {
+      $scope.showInfo='无小分类进入大分类';
+      console.log(event,toState,toPArams,fromState,fromParams);
+      if(fromState.name=='app.product-list'){
+        $scope.showInfo='全部商品';
+      }
+    });
     $scope.categories = [
       {
         ID: 1,
@@ -125,7 +133,11 @@
     $scope.gotoCategoryAdd = function () {
       location.href = '#/app/category-add/' + $scope.activeCategory.ID + '/' + $scope.activeCategory.Name;
     }
-
+    $scope.$watch('activeSubCategory',function (newValue,oldValue) {
+      if(newValue.ID){
+        CategoryService.updateCategory($scope.activeSubCategory);
+      }
+    })
 
   }]);
 })();

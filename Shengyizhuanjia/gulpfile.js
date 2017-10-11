@@ -4,11 +4,10 @@ var cleanCss = require('gulp-clean-css');
 var rename = require('gulp-rename');
 
 var paths = {
-  sass: ['./scss/**/*.scss','/www/view/**/*.scss']
+  sass: ['./scss/**/*.scss','./www/view/**/*.scss']
 };
 
 gulp.task('default', ['sass']);
-gulp.task('ionic:watch:before',['sass']);
 gulp.task('sass', function(done) {
   gulp.src('./scss/ionic.app.scss')
     .pipe(sass())
