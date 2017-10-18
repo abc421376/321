@@ -2,7 +2,7 @@
  * Created by Administrator on 2017/10/11.
  */
 angular.module('shi.directives')
-  .directive('expanderDirective',function () {
+  .directive('expanderDirective',[function () {
     return{
       restrict:'EA',
       template:'<div ng-transclude ng-show="show"></div> \
@@ -22,4 +22,4 @@ angular.module('shi.directives')
      },
       transclude:true
     };
-  });
+  }]);

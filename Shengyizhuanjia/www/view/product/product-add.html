@@ -2,8 +2,8 @@
   <ion-content class="has-footer">
     <div class="list">
       <div class="item item-icon-right">
-        <img class="product-image" src="/view/product/images/supplier_icon.png" alt="" ng-click="showActionSheet()" ng-if="product.Images.length < 3">
-        <img class="product-image" style="width: 85px;height: 85px" alt="" ng-repeat="image in product.Images" ng-src="{{image}}">
+        <img style="width: 85px;height: 85px" class="product-image" src="view/product/images/supplier_icon.png" alt="" ng-click="showActionSheet()" ng-if="product.Images.length < 3">
+        <img style="width: 85px;height: 85px" class="product-image"  alt="" ng-repeat="image in product.Images" ng-src="{{image}}">
         <i class="icon"><h6>上传图片</h6></i>
       </div>
       <div class="item item-input item-icon-right">

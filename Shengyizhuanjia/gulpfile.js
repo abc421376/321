@@ -8,6 +8,7 @@ var paths = {
 };
 
 gulp.task('default', ['sass']);
+gulp.task('ionic:watch:before',['sass']);
 gulp.task('sass', function(done) {
   gulp.src('./scss/ionic.app.scss')
     .pipe(sass())

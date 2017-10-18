@@ -2,7 +2,7 @@
  * Created by Administrator on 2017/10/11.
  */
 angular.module('shi.directives')
-  .directive('companyDirective',function () {
+  .directive('companyDirective',[function () {
     return{
       restrict:'E',
       template:'<div class="row text-center" style="position:fixed;bottom:{{bottom}};width: 100%;height: 44px;text-align: center;">\
@@ -13,4 +13,4 @@ angular.module('shi.directives')
         bottom:'@'
       }
     };
-  });
+  }]);

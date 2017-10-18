@@ -15,70 +15,70 @@
     $scope.categories = [
       {
         ID: 1,
-        Name: '电脑整机',
+        Name: '小吃',
         Children: [
           {
             ID: 11,
-            Name: '笔记本'
+            Name: '香肠'
           },
           {
             ID: 12,
-            Name: '台式机'
+            Name: '鱼丸'
           },
           {
             ID: 13,
-            Name: '平板电脑'
+            Name: '鸡腿'
           }
         ]
       },
       {
         ID: 2,
-        Name: '电脑配件',
+        Name: '汽车',
         Children: [
           {
             ID: 21,
-            Name: 'CPU'
+            Name: '宝马'
           },
           {
             ID: 22,
-            Name: '内存'
+            Name: '奔驰'
           }
         ]
       },
       {
         ID: 3,
-        Name: '外设产品',
+        Name: '日本女星',
         Children: [
           {
             ID: 31,
-            Name: '鼠标'
+            Name: '苍老师'
           },
           {
             ID: 32,
-            Name: '键盘'
+            Name: '小泽玛利亚'
           }
         ]
       },
       {
         ID: 4,
-        Name: '路由产品',
+        Name: '动漫',
         Children: [
           {
             ID: 41,
-            Name: '路由器'
+            Name: '狐妖小红娘'
           },
           {
             ID: 42,
-            Name: '交换机'
+            Name: '秦时明月'
           },
           {
             ID: 43,
-            Name: '网卡'
+            Name: '恶魔高校'
           }
           ,
           {
             ID: 44,
-            Name: '网络配件'
+            Name: '日在校园'
           }
         ]
       },

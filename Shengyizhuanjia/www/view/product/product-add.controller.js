@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Created by Administrator on 2017/9/29.
  */
 (function () {
@@ -12,7 +12,7 @@
         Name:'',
         Barcode:'',
         SupplierID:0,
-        Images:['/view/product/images/1.jpg','/view/product/images/2.jpg','/view/product/images/3.jpg'],
+        Images:[],
         CategoryID:CategoryService.activeCategory.ID,
         Category:{
           ID:CategoryService.activeCategory.ID,

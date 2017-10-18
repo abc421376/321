@@ -6,7 +6,10 @@
     "cordova": {}
   },
   "watchPatterns": [
-    "scss/**/*"
+    "scss/**/*",
+    "www/**/*",
+    "!www/lib/**/*",
+    "!www/**/*.map"
   ],
   "type": "ionic1"
 }

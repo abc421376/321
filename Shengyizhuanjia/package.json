@@ -16,6 +16,8 @@
     "cordova-plugin-statusbar",
     "cordova-plugin-splashscreen"
   ],
-  "cordovaPlatforms": []
+  "cordovaPlatforms": [],
+  "dependencies": {
+    "cordova-android": "^6.2.3"
+  }
 }
-

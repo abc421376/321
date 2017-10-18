@@ -136,7 +136,7 @@
             {
               ID: 12,
               Images: ['view/product/images/commodity_no.png'],
-              Name: 'sanxing1',
+              Name: 'sanxing',
               Price: '2000.00',
               Store: 12,
               Barcode: '121212131'
@@ -159,14 +159,14 @@
               Barcode: '121212131'
             }
           ];
-          $scope.products = $scope.products.concat(list);
-          $scope.sourceProducts = angular.copy($scope.products);
+          $scope.products=$scope.products.concat(list);
+          $scope.sourceProducts=angular.copy($scope.products);
           $scope.$broadcast('scroll.refreshComplete');
           $scope.$broadcast('scroll.infiniteScrollComplete');
           $ionicLoading.hide();
           isLoading=false;
-          if (pageIndex == 3) {
-            $scope.hasMore = false;
+          if(pageIndex==3){
+            $scope.hasMore=false;
           }
         }, 3000);
       }

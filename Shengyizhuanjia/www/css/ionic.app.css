@@ -9820,7 +9820,7 @@ a.button {
   display: flex;
   align-items: center;
   margin-top: -1px;
-  border: 1px solid black; }
+  border: 0px solid black; }
 
 .quick-action-item + .quick-action-item {
   margin-left: -1px; }

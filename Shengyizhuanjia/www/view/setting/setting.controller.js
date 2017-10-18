@@ -4,7 +4,7 @@
 (function () {
   'use strict';
   angular.module('starter.controllers')
-    .controller('SettingCtrl',['$scope','$ionicHistory','localStorageService','$state',function ($scope,$ionicHistory,localStorageService,$state) {
+    .controller('SettingCtrl',['$scope','$ionicHistory','localStorageService','$ionicPopup','$state',function ($scope,$ionicHistory,localStorageService,$ionicPopup,$state) {
       $scope.goBack=function () {
         $ionicHistory.nextViewOptions(
           {
@@ -24,6 +24,11 @@
         $scope.User=localStorageService.get('user');
         $scope.User.isLogin=false;
         localStorageService.update('user', $scope.User);
+        $ionicPopup.alert({
+          title: '提示',
+          template: '退出成功',
+          okType: 'energized-bg'
+        });
         $state.go('login');
       }
 
